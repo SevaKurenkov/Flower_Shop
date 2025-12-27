@@ -435,10 +435,52 @@ footer{
     background: #447F7B;
     border-radius: 300px;
     top: 15%;
+    display: flex;
+    justify-content: center;
+    
 }
 
-.CactusStick{
+.CactusSticks{
+    position: relative;
+    width: 137px;
+    height: 122px;
+}
 
+.CactusSticksBlok{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 52px 0px 150px;
+    gap: 52px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.CactusStick1{
+    position: absolute;
+    width: 41px;
+    height: 9px;
+    background-color: #3448A4;
+    transform: rotate(50deg);
+}
+
+.CactusStick2{
+    position: absolute;
+    width: 41px;
+    height: 9px;
+    left: 100%;
+    top: 40%;
+    background-color: #3448A4;
+    transform: rotate(150deg) translateX(100%);
+}
+
+.CactusStick3{
+    position: absolute;
+    width: 41px;
+    height: 9px;
+    background-color: #3448A4;
+    top: 100%;
+    transform: rotate(-170deg);
 }
 
 .Table{
@@ -448,7 +490,6 @@ footer{
     height: fit-content;
     flex-wrap: wrap;
     max-width: 1010px;
-    padding: 0px 0px 0px 20px;
 
 }
 
@@ -465,5 +506,85 @@ footer{
     border: 1px solid #A87717;
     width: 100%;
     background-color: #FFBD38;
+    color: #3448A4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 13px;
+}
+
+.firstText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secondText{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: fit-content;
+}
+
+.thirdText{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 16px;
+    gap: 10px;
+    width: 256px;
+    height: 180px;
+    border: 3px solid #3448A4;
+}
+
+.TextMedium{
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Fira Sans';
+    font-size: 40px;
+    line-height: 48px;
+    color: #3448A4;
+}
+
+.TextSmall{
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Fira Sans';
+    font-size: 32px;
+    line-height: 38px;
+    color: #3448A4;
+}
+
+.TextBig{
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Fira Sans';
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    color: #3448A4;
+}
+
+.CenterText{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+}
+
+.Summary{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0px;
+    gap: 166px;
+    width: 100%;
+    height: fit-content;
 }
 
