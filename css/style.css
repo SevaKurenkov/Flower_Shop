@@ -4,13 +4,16 @@
 body{
     display: flex;
     flex-direction: column;
+    width: 100vw;
+    height: 3200px;
+    overflow-x: hidden;
 }
 
 nav{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 100%;
+    height: 800px;
     background-color: #3448A4;
     align-items: center;
     justify-content: space-around;
@@ -18,9 +21,11 @@ nav{
 
 header{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
     width: 100%;
-    height: 100vh;
+    height: 800px;
     background-color: #FFBD38;
 }
 
@@ -28,7 +33,7 @@ main{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
+    height: 800px;
     background-color: #447F7B;
 }
 
@@ -36,17 +41,19 @@ footer{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
+    height: 800px;
     background-color: #FFBD38;
 }
 
 .centerRectangle{
     width: 23%;
-    height: 100vh;
+    height: 800px;
     background-color: #447F7B;
-    position: relative;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
 }
-
 
 .cazinoRound{
     border-radius: 10000px;
@@ -54,12 +61,41 @@ footer{
     background-position: center;
     background-size: 150%;
     background-repeat: no-repeat;
-    width: 40vw;
-    height: 40vw;
+    width: 600px;
+    height: 600px;
+    z-index: 1;
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+}
+
+.blockStars{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: fit-content;
+    height: 100%;
+    z-index: 2;
+}
+
+.blockStarPurpule{
+    background-color: #BB42B3;
+    border-radius: 46px;
+    width: 300px;
+    height: 65px;
+}
+
+.blockStarYellow{
+    background-color: #FFBD38;
+    border-radius: 46px;
+    width: 300px;
+    height: 65px;
+}
+.blockforstar{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .cazinoArrow{
@@ -67,67 +103,339 @@ footer{
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
-    width: 5vw;
-    height: 10vw;
-    position: relative;
+    width: 92px;
+    height: 165px;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.blockStars{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 25vw;
-    align-items: center;
-    width: fit-content;
-    height: 100%;
-}
-
-.blockStarPurpule{
-    background: #BB42B3;
-    border-radius: 46px;
-    width: 20vw;
-    height: 4.5vw;
-}
-
-.blockStarYellow{
-    background: #FFBD38;
-    border-radius: 46px;
-    width: 20vw;
-    height: 4.5vw;
-}
-
 .moneyCoinblock45{
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 35vw;
+    width: fit-content;
     height: fit-content;
+    gap: 280px;
+}
+
+.moneyCoinblock135{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(135deg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+    height: fit-content;
+    gap: 330px;
 }
 
 .moneyCoin{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 5vw;
-    height: 5vw;
+    width: 111px;
+    height: 111px;
     transform: rotate(90deg);
+    background: #FFBD38;
+    border-radius: 1000px;
 }
 
 .moneyCoinIn{
+    width: 85px;
+    height: 85px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 5vw;
-    height: 5vw;
     background: #FFBD38;
     border-radius: 10000px;
     color: #A87717;
-    border: #A87717 2px solid;
+    border: #A87717 4px solid;
+    font-size: 80px;
+}
+
+.BlockStar{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+    height: fit-content;
+    gap: 330px;
+}
+
+.BlockStar90{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+    height: fit-content;
+    gap: 330px;
+}
+
+.blockforstarG{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blockStarGreen{
+    background-color: #447F7B;
+    border-radius: 46px;
+    width: 100px;
+    height: 22px;
+}
+
+.flowerGreen1{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #447F7B;
+    border-radius: 10000px;
+}
+
+.flowerGreen1Stick{
+    background-color: #FFBD38;
+    border-radius: 409px;
+    width: 64px;
+    height: 20px;
+}
+
+.flowerGreen2Stick{
+    background-color: #447F7B;
+    border-radius: 1000px;
+    width: 100px;
+    height: 48px;
+}
+
+.flowerGreen2Center{
+    background-color: #FFBD38;
+    border-radius: 409px;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.FlowerInPod{
+    height: 800px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.FlowerPot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.33333%;
+    height: fit-content;
+    position: relative;
+    z-index: 2;
+}
+
+.fUp{
+    width: 33.33333vw;
+    max-width: 700px;
+    height: 42px;
+    background-color: #BB42B3;
+}
+
+.fDown{
+    background-color : #BB42B3;
+    width: 25vw;
+    height: 291px;
+    max-width: 500px;
+}
+
+.sUp{
+    width: 33.33333vw;
+    max-width: 700px;
+    height: 42px;
+    background: #3448A4;
+}
+
+.sDown{
+    width: 25vw;
+    max-width: 500px;
+    height: 228px;
+    background: #3448A4;
+}
+
+.furstFlowerFlower{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: 100%;
+    position: relative;
+}
+
+.furstFlower{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 203px;
+    height: 203px;
+    padding: 20px 0px 0px 0px;
+    z-index: 2;
+}
+
+.furstFlowerStick{
+    background-color: #3448A4;
+    border-radius: 409px;
+    width: 203px;
+    height: 46px;
+}
+
+.furstFlowerCenter{
+    width: 50px;
+    height: 50px;
+    background: #FFBD38;
+    border-radius: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.furstFlowerCenterStick{
+    width: 288px;
+    height: 12px;
+    background-color: #447F7B;  
+    z-index: 1;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -30%) rotate(90deg);
+}
+
+.furstFlowerLeaf1{
+    width: 200px;
+    height: 80px;
+    background: #447F7B;
+    border-radius: 50px;
+    position: absolute;
+    top: 85%;
+    left: 35%;
+    transform: translate(-65%, -15%) rotate(60deg);
+}
+
+.furstFlowerLeaf2{
+    width: 200px;
+    height: 80px;
+    background: #447F7B;
+    border-radius: 50px;
+    position: absolute;
+    left: 65%;
+    top: 85%;
+    transform: translate(-35%, -15%) rotate(120deg);
+}
+
+.thirdFlowerFlower{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: 100%;
+    position: relative;
+}
+
+.thirdFlower{
+    width: 161px;
+    height: 218px;
+    position: relative;
+    padding: 20px 0px 0px 0px;
+    z-index: 2;
+}
+
+.littleFlower1{
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    padding: 0px 0px 0px 20px;
+}
+
+.littleFlower2{
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    left: 100%;
+    top: 60%;
+    transform: translate(-90%, -65%);
+}
+
+.littleFlower3{
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    left: 0%;
+    top: 100%;
+    transform: translate(-0%, -100%);
+    padding: 0px 0px 0px 20px;
+}
+
+.littleFlowerStick1{
+    position: absolute;
+    width: 96px;
+    height: 46px;
+    background: #3448A4;
+    border-radius: 1000px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.littleFlowerStick{
+    position: absolute;
+    width: 96px;
+    height: 46px;
+    background: #3448A4;
+    border-radius: 1000px;
+
+}
+
+.littleFlowerCenter{
+    position: absolute;
+    width: 26.7px;
+    height: 26.7px;
+    background: #FFBD38;
+    border-radius: 1000px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Cactus{
+    position: relative;
+    width: 228px;
+    height: 498px;
+    background: #447F7B;
+    border-radius: 300px;
+    top: 15%;
+
+}
+
+.CactusStick{
+
 }
