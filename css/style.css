@@ -501,7 +501,27 @@ footer{
     width: 200px;
     height: 200px;
     border: 1px solid #A87717;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.flowerBlock{
+    width: 95%;
+    height: 95%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flowerStick{
+    width: 32px;
+    height: 142px;
+    border-radius: 46px;
+    transform: rotate(90deg);
+}
+
 
 .Check{
     min-width: 480px;
@@ -586,23 +606,8 @@ footer{
     justify-content: space-between;
     align-items: center;
     padding: 18px 0px;
-    gap: 166px;
     width: 100%;
     height: fit-content;
-}
-
-.flowerYellowBlock{
-    width: 150px;
-    height: 150px;
-    position: relative;
-}
-
-.flowerYellowStick{
-    width: 33px;
-    height: 150px;
-    background: #FFBD38;
-    border-radius: 46px;
-    transform: rotate(90deg);
 }
 
 .AnimationtextFraim {
@@ -768,5 +773,104 @@ footer{
     }
     .sDown{
         min-width: 234px;
+    }
+}
+
+@media (max-width: 604px) {
+    .cazinoRound{
+        width: 240px;
+        height: 240px;
+    }
+    .moneyCoinblock45, .moneyCoinblock135, .BlockStar, .BlockStar90{
+        gap: 135px;
+    }
+
+    .blockforstarG{
+        width: 39px;
+        height: 39px;
+    }
+
+    .blockStarGreen{
+        height: 9px;
+        width: 39px;
+    }
+
+    .moneyCoin{
+        width: 44px;
+        height: 44px;
+    }
+
+    .moneyCoinIn{
+        font-size: 30px;
+        width: 34px;
+        height: 34px;
+        border: #A87717 2px solid;
+    }
+
+    .blockStars{
+        flex-direction: row;
+        height: fit-content;
+        width: 100%;
+    }
+    .blockforstar{
+        width: 74px;
+        height: 74px;
+    }
+    .blockStarPurpule, .blockStarYellow {
+        width: 74px;
+        height: 17px;
+        border-radius: 11px;
+    }
+
+    .cazinoArrow{
+        width: 37px;
+        height: 70px;
+    }
+
+    .flowerGreen1, .flowerGreen2 {
+        display: flex;
+        width: 40px;    
+        height: 40px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flowerGreen1Stick{
+        width: 8px;
+        height: 25px;
+        background: #FFBD38;
+        border-radius: 164px;
+    }
+
+    .flowerGreen2Stick{
+        width: 40px;
+        height: 20px;
+        background: #447F7B;
+        border-radius: 400px;
+    }
+
+    .flowerGreen2Center{
+        width: 11.24px;
+        height: 11.24px;
+        background: #FFBD38;
+        border-radius: 400px;
+    }
+
+    .block{
+        width: 100px;
+        height: 100px;
+    }
+
+    .flowerStick{
+        width: 14px;
+        height: 60px;
+        border-radius: 19px;
+    }
+    .Check{
+        min-width: 200px;
+    }
+
+    .TextSmall{
+        font-size: 25px;
     }
 }
