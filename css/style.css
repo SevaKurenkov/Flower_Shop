@@ -709,3 +709,64 @@ footer{
 .BackgroundBlue{
     background-color: #3448A4;
 }
+
+@media (max-width: 1220px) {
+    nav{
+        flex-direction: column;
+        height: fit-content;
+        position: relative;
+        padding: 20px 0px;
+    }
+
+    header{
+        flex-direction: column;
+        height: fit-content;
+        width: 100%;
+        align-items: center;
+    }
+
+    footer{
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        align-items: center;
+    }
+
+    .Table{
+        height: fit-content;
+        width: fit-content;
+        max-height: 1010px;
+        justify-content: space-between;
+    }
+
+    .centerRectangle{
+        height: 100%;
+    }
+    .blockStars{
+        flex-direction: row;
+        height: fit-content;
+        width: 100%;
+    }
+    .blockforstar{
+        width: 180px;
+        height: 180px;
+    }
+    .blockStarPurpule, .blockStarYellow {
+        width: 180px;
+        height: 42px;
+        border-radius: 28px;
+    }
+    
+    .fDown{
+        min-width: 234px;
+    }
+    .fUp{
+        min-width: 310px;
+    }
+    .sUp{
+        min-width: 310px;
+    }
+    .sDown{
+        min-width: 234px;
+    }
+}
