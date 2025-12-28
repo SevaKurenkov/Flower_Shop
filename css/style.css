@@ -35,7 +35,9 @@ main{
     width: 100%;
     height: 800px;
     background-color: #447F7B;
-    align-items: center;
+    justify-content: center;
+    padding: 33px 0px;
+    gap: 26px;
 }
 
 footer{
@@ -45,7 +47,6 @@ footer{
     height: 800px;
     background-color: #447F7B;
     justify-content: space-between;
-    align-items: center;
     overflow: hidden;
 }
 
@@ -604,64 +605,107 @@ footer{
     transform: rotate(90deg);
 }
 
+.AnimationtextFraim {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    height: fit-content;
+    position: relative;
+}
+
+.textFraim11{
+    width: max-content;
+    animation: moveRight1 10s linear infinite;
+    white-space: nowrap;
+}
+
+.textFraim12{
+    position: absolute;
+    width: max-content;
+    animation: moveRight2 10s linear infinite;
+    white-space: nowrap;
+}
+
+.textFraim21{
+    width: max-content;
+    animation: moveLeft1 10s linear infinite;
+    white-space: nowrap;
+}
+
+.textFraim22{
+    position: absolute;
+    width: max-content;
+    animation: moveLeft2 10s linear infinite;
+    white-space: nowrap;
+}
+
+@keyframes moveLeft1 {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+@keyframes moveLeft2 {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes moveRight1 {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+@keyframes moveRight2 {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
 .textFraim{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 33px 0px;
-    width: 100%;
-    height: 800px;
-    gap: 26px;
-}
-
-.textFraim1{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    height: fit-content;
-    background: #FFBD38;
-
-}
-
-.textFraim2{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    height: fit-content;
-    background: #3448A4;
-}
-
-.textFraim3{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    height: fit-content;
-    background: #BB42B3;
-}
-
-.textFraim4{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    height: fit-content;
-    background: #BB42B3;
-}
-
-.textFraimBlue{
     font-family: 'Playfair Display';
     font-size: 120px;
     line-height: 160px;
-    color: #3448A4;
 }
 
-.textFraimYelloy{
-    font-family: 'Playfair Display';
-    font-size: 120px;
-    line-height: 160px;
+.ColorPurple{
+    color: #BB42B3;
+}
+.ColorYelloy{
+    color: #FFBD38;
+}
+.ColorOrange{
+    color: #A87717;
+}
+.ColorGreen{
+    color: #447F7B;
+}
+.ColorBlue{
     color: #3448A4;
+}
+.BackgroundPurple{
+    background-color: #BB42B3;
+}
+.BackgroundYelloy{
+    background-color: #FFBD38;
+}
+.BackgroundOrange{
+    background-color: #A87717;
+}
+.BackgroundGreen{
+    background-color: #447F7B;
+}
+.BackgroundBlue{
+    background-color: #3448A4;
 }
