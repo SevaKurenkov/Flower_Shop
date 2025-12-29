@@ -114,6 +114,7 @@ footer{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 5;
 }
 
 .moneyCoinblock45{
@@ -126,7 +127,7 @@ footer{
     justify-content: space-between;
     width: fit-content;
     height: fit-content;
-    gap: 280px;
+    gap: 330px;
 }
 
 .moneyCoinblock135{
@@ -249,6 +250,7 @@ footer{
     flex-direction: column;
     justify-content: end;
     align-items: center;
+    overflow: hidden;
 }
 
 .FlowerPot{
@@ -500,7 +502,7 @@ footer{
 .block{
     width: 200px;
     height: 200px;
-    border: 1px solid #A87717;
+    border: 3px solid #A87717;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -644,6 +646,69 @@ footer{
     white-space: nowrap;
 }
 
+.rotateOnClock{
+    animation: rotateOnClock 5s linear infinite;
+}
+
+.rotateNotOnClock{
+    animation: rotateNotOnClock 5s linear infinite;
+}
+
+.DownUp{
+    animation: DownUp 5s linear infinite;
+}
+
+.UpDown{
+    animation: UpDown 5s linear infinite;
+}
+
+
+
+@keyframes DownUp {
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes UpDown {
+    0% {
+        transform: translateY(100%);
+    }
+    50% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes rotateOnClock {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
+@keyframes rotateNotOnClock {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: -360deg;
+    }
+}
+
+
 @keyframes moveLeft1 {
     0% {
         transform: translateX(100%);
@@ -684,6 +749,97 @@ footer{
     line-height: 160px;
 }
 
+@keyframes ColorsFromPink {
+    0% {
+        background-color: #BB42B3;
+    }
+    25%{
+        background-color: #447F7B;
+    }
+    50%{    
+        background-color: #3448A4;
+    }
+    75%{
+        background-color: #FFBD38;
+    }
+    100%{
+        background-color: #BB42B3;
+    }
+}
+
+@keyframes ColorsFromGreen {
+    0%{
+        background-color: #447F7B;
+    }
+    25%{    
+        background-color: #3448A4;
+    }
+    50%{
+        background-color: #FFBD38;
+    }
+    75%{
+        background-color: #BB42B3;
+    }
+    100%{
+        background-color: #447F7B;
+    }
+}
+
+@keyframes ColorsFromBlue {
+    0% {
+        background-color: #3448A4;
+    }
+    25%{
+        background-color: #FFBD38;
+    }
+    50%{    
+        background-color: #BB42B3;
+    }
+    75%{
+        background-color: #447F7B;
+    }
+    100%{
+        background-color: #3448A4;
+    }
+}
+
+@keyframes ColorsFromYelloy {
+    0% {
+        background-color: #FFBD38;
+    }
+    25%{
+        background-color: #BB42B3;
+    }
+    50%{    
+         background-color: #447F7B;
+    }
+    75%{
+        background-color: #3448A4;
+    }
+    100%{
+        background-color: #FFBD38;
+    }
+}
+
+.Table{
+    .BackgroundPurple{
+        animation: ColorsFromPink step-start 6s infinite;
+    }
+
+    .BackgroundYelloy{
+        animation: ColorsFromYelloy step-start 6s infinite;
+    }
+
+    .BackgroundGreen{
+        animation: ColorsFromGreen step-start 6s infinite;
+    }
+
+    .BackgroundBlue{
+        animation: ColorsFromBlue step-start 6s infinite;
+    }
+}
+
+
 .ColorPurple{
     color: #BB42B3;
 }
@@ -715,6 +871,9 @@ footer{
     background-color: #3448A4;
 }
 
+
+
+
 @media (max-width: 1220px) {
     nav{
         flex-direction: column;
@@ -730,6 +889,9 @@ footer{
         align-items: center;
     }
 
+    .FlowerInPod{
+        height: 700px;
+    }
     footer{
         flex-direction: column;
         width: 100%;
@@ -773,7 +935,15 @@ footer{
     }
     .sDown{
         min-width: 234px;
+        height: 180px;
     }
+
+    .fDown{
+        min-width: 265px;
+        height: 180px;
+    }
+
+
 }
 
 @media (max-width: 604px) {
@@ -868,6 +1038,12 @@ footer{
     }
     .Check{
         min-width: 200px;
+    }
+
+
+    .Table{
+        max-height: 600px;
+        overflow: hidden;
     }
 
     .TextSmall{
